@@ -4,7 +4,6 @@ public enum Status {
     ONLY_ME,
     PUBLIC,
     DELETED;
-
     Status() {
     }
 }

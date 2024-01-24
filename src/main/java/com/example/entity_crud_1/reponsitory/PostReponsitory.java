@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface PostReponsitory extends JpaRepository<Post, Long> {
     List<Post> findAllByOrderByCreatedAtAsc();
-    List<Post> findByTitleContainingOrContentContaining(String title, String content);
+    List<Post> findAllByTitleContainingIgnoreCase(String name);
 
 }
